@@ -6,28 +6,25 @@ const decrementButton = document.getElementById("decrement");
 const resetButton = document.getElementById("reset")
 
 function updateCount(){
-    countDisplay.textContent=count;
-    if (count > 0){
-        countDisplay.style.color = "green";
-    } else if (count < 0) {
-        countDisplay.style.color = "red";
-    } else {
-        countDisplay.style.color = "black"
+countDisplay.textContent=count;
+if (count > 0){
+countDisplay.style.color = "green";
+} else if (count < 0) {
+countDisplay.style.color = "red";
+} else {
+countDisplay.style.color = "black"
     }
 }
-
 incrementButton.addEventListener("click" , function() {
-    count++;
-    updateCount();
+count++;
+updateCount();
 });
-
 decrementButton.addEventListener("click", function() {
-    count--;
-    updateCount();
+count--;
+updateCount();
 });
-
 resetButton.addEventListener("click", function() {
-    count = 0
-    updateCount();
+count = 0
+updateCount();
 });
 

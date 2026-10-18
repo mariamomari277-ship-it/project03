@@ -1,11 +1,12 @@
 const title = document.getElementById("main-title");
-title.textContent = "Welcome to DOM!";
-
 const description = document.querySelector(".description");
-description.textContent="The text has been changed!";
+const card = document.getElementById("card");
+const button = document.getElementById("change-button");
 
-title.style.color ="blue";
+title.textContent = "JavaScript Changed This Title!";
+description.textContent = "The original text has changed.";
 
-const statusElement = document.getElementById("status");
-statusElement.textContent = "Status: active";
-statusElement.classList.add("active");
+card.style.color = "darkblue";
+card.classList.add("active");
+
+button.textContent = "Page Changed!";
